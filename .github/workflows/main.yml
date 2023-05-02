@@ -38,5 +38,5 @@ jobs:
        with:
           context: .
           push: true
-          tags: ghcr.io/RyanoB/app-test:latest
+          tags: ghcr.io/ryanob/app-test:latest
           labels: ${{ steps.meta.outputs.labels }}
