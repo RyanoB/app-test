@@ -52,7 +52,7 @@ jobs:
       - name: Connexion au cluster kubernetes
         run: |
           mkdir ~/.kube/
-          echo -e ${{ secrets.KUBECONFIG_TEST }} | base64 --decode > ~/.kube/config
+          echo -e "${{ secrets.KUBECONFIG_TEST }}" | base64 --decode > ~/.kube/config
           
       - name: Connexion au cluster kubernetes
         run: |
